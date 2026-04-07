@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> trabalhando com Dom</title>
+    <style>
+        body {
+            background-color: rgb(72, 72, 180);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando comn estudos DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>vendo como o <strong>DOM</strong> funciona</p>
+    <div id="caixa">clique em mim<div>
+
+        <script>
+            let corpo = document.body
+            let p1 = document.getElementsByTagName('p')[1]
+
+            /*
+            let d = document.getElementById('caixa')
+            d.style.background = 'blue'
+            d.innerText = 'ola'
+            */
+
+            /*
+            let d = document.getElementsByName('caixa')[0]
+            d.innerText= "ola"
+            */
+
+            let d = document.querySelector('div#caixa')
+            d.style.background = 'black'
+        </script>
+</body>
+</html>
