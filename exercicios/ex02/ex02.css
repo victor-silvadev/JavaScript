@@ -5,13 +5,23 @@
 }
 
 body {
-    background-color: transparent;
+    background-color: rgb(56, 56, 187);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 header {
     margin: 50px;
+}
+
+img#foto {
+display: block;        /* Faz a imagem se comportar como um bloco */
+    margin: 15px auto;     /* Centraliza e dá espaço em cima/baixo */
+    width: 250px;          /* Largura fixa */
+    height: 250px;         /* Altura fixa (igual à largura para ser um círculo) */
+    object-fit: cover;     /* NÃO deixa a imagem esticar ou amassar */
+    border-radius: 50%;    /* Deixa a foto redondinha */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5)
 }
 
 section {
@@ -22,7 +32,7 @@ section {
 
     padding: 10px;
     width: 500px;
-    height: 300px;
+    height: 400px;
     margin: auto;
 }
 
