@@ -12,11 +12,72 @@ body {
 
 header {
     margin: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+section {
+    background-color: rgba(255, 255, 255, 0.82);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.859);
+    border-radius: 15px;
+    border: 2px solid rgb(20, 68, 200);
+    
+    padding: 10px;
+    width: 500px;
+    min-height: 435px; /* Altura mínima em vez de fixa */
+    height: auto;      /* Deixa o conteúdo ajustar a altura */
+    margin: auto;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nasci,.seixo,.btn {
+    padding: 10px;
+}
+
+input#iano {
+    background: rgba(255, 255, 255, 0.009);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    width: 100px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+input#iano::-webkit-outer-spin-button,
+input#iano::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn {
+    width: 100px;
+    margin: 10px auto;
+    padding: 5px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+
+    background: blue;
+    color: white;
+
+    text-align: center;
+    font-family: cursive;
+    transition-duration: .5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    color: grey;
+    transition-duration: .5s;
 }
 
 img#foto {
 display: block;        /* Faz a imagem se comportar como um bloco */
-    margin: 15px auto;     /* Centraliza e dá espaço em cima/baixo */
+    margin: 10px auto;     /* Centraliza e dá espaço em cima/baixo */
     width: 250px;          /* Largura fixa */
     height: 250px;         /* Altura fixa (igual à largura para ser um círculo) */
     object-fit: cover;     /* NÃO deixa a imagem esticar ou amassar */
@@ -24,22 +85,9 @@ display: block;        /* Faz a imagem se comportar como um bloco */
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5)
 }
 
-section {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.596);
-    border-radius: 15px;
-    border: 5px solid black;
-
-    padding: 10px;
-    width: 500px;
-    height: 400px;
-    margin: auto;
-}
-
-
 
 
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 50px;
+    margin-top: 30px;
 }
