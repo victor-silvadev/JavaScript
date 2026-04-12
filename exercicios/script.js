@@ -7,7 +7,8 @@ function enviar() {
     // Verifica se os campos estão vazios
     if (inicio.value.length == 0 || fim.value.length == 0 || passos.value.length == 0) {
         res.innerHTML = 'Impossível contar! Faltam dados.'
-    } else {
+    }
+    else {
         res.innerHTML = 'Contando: <br>'
         let i = Number(inicio.value)
         let f = Number(fim.value)
@@ -23,12 +24,13 @@ function enviar() {
             for(let c = i; c <= f; c += p) {
                 res.innerHTML += `${c} \u{1F449} ` // Adiciona um emoji de seta
             }
-        } else {
+        } 
+        else {
             // Contagem regressiva (Caso o início seja maior que o fim)
             for(let c = i; c >= f; c -= p) {
-                res.innerHTML += `${c} \u{1F449} `
+                res.innerHTML += `${c} 👉 `
             }
         }
-        res.innerHTML += `\u{1F3C1}` // Emoji de bandeira no fim
+        res.innerHTML += ` 🏁` // Emoji de bandeira no fim
     }
 }
