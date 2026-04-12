@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <form id="container-principal" method="get">
+            <label for="inicio">Inicio:
+                <input type="number" id="inicio" required>
+            </label> <br>
+
+            <label for="fim">Fim:
+                <input type="number"  id="fim" required>
+            </label> <br>
+
+            <label for="passos">Passos:
+                <input type="number" id="passos" required>
+            </label> <br>
+
+            <button type="button" onclick="enviar()">Enviar</button> <br>
+
+            <div id="resposta">Contando: <br>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
